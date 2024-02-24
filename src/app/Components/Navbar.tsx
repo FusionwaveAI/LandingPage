@@ -31,8 +31,11 @@ export const Navbar = () => {
                 </Link>
             <div className="flex items-center gap-x-2">
             {/*<Link href={isSignedIn ? "/dashboard" : "/sign-up"}>*/}
+            <Button variant="outline" className="rounded-full">
+                 Fusion Fight
+             </Button>
              <Button variant="outline" className="rounded-full">
-                 Get Started
+                 FusionNFT
              </Button>
             {/*</Link>*/}
             </div>
