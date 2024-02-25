@@ -1,44 +1,63 @@
-"use client";
-
-// import { cn } from "@/lib/utils";
-// import { useAuth } from "@clerk/nextjs";
+"use client"
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
+import { useState } from "react";
+import Logo from "./media/logo.png";
 import { Button } from "./UI/button";
-import Logo from "./media/logo.png"
+
 const font = Montserrat({
     weight: "600",
     subsets: ["latin"]
 });
 
 export const Navbar = () => {
-    
-//comments
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
+
     return (
         <nav className="p-4 bg-transparent flex items-center justify-between">
-            <Link href="/" className="flex items-center">
+            <a href="/" className=" md:flex">
                 <div className="relative h-8 w-8 mr-4">
                     <Image
-                    fill
-                    alt="logo"
-                    src={Logo}
+                        fill
+                        alt="logo"
+                        src={Logo}
                     />
                 </div>
-                <h1 className={("text-2xl font-bold text-white")}>
+                <h1 className="text-2xl font-bold text-white">
                     FusionwaveAI
                 </h1>
-                </Link>
-            <div className="flex items-center gap-x-2">
-            {/*<Link href={isSignedIn ? "/dashboard" : "/sign-up"}>*/}
-            <Button variant="outline" className="rounded-full">
-                 Fusion Fight
-             </Button>
-             <Button variant="outline" className="rounded-full">
-                 FusionNFT
-             </Button>
-            {/*</Link>*/}
+            </a>
+            <div className="flex items-center ">
+                <div className="hidden md:flex">
+                    <a href="https://fusionfight.netlify.app/">
+                        <Button variant="outline" className="rounded-full mr-3">
+                            Fusion Fight
+                        </Button>
+                    </a>
+                    <Button variant="outline" className="rounded-full">
+                        FusionNFT
+                    </Button>
+                </div>
+                <div className="md:hidden">
+                    <button onClick={toggleDropdown} className="text-white text-3xl focus:outline-none">
+                        ☰
+                    </button>
+                    {dropdownOpen && (
+                        <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl">
+                            <a href="https://fusionfight.netlify.app/" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                                Fusion Fight
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                                FusionNFT
+                            </a>
+                        </div>
+                    )}
+                </div>
             </div>
         </nav>  
-    )
-}
+    );
+};

@@ -82,10 +82,10 @@ export const Logos = () => {
                 <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
                     Whom we are Working with
                 </h2>
-                <div className="text-gray-500 dark:text-gray-400 mx-8">
+                <div className="text-gray-500 dark:text-gray-400 mx-8 ">
                     <Slider {...sliderSettings}>
                     {companies.map((company) => (
-                        <a key={company.name} href="#" className="flex justify-center items-center">
+                        <a key={company.name} href="#" className="flex justify-center items-center ml-16">
 
                             <Image
                                 src={company.imagePath}
