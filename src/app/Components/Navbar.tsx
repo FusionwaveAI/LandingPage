@@ -19,7 +19,7 @@ export const Navbar = () => {
 
     return (
         <nav className="p-4 bg-transparent flex items-center justify-between">
-            <a href="/" className=" md:flex">
+            <a href="/" className="flex">
                 <div className="relative h-8 w-8 mr-4">
                     <Image
                         fill
@@ -27,7 +27,7 @@ export const Navbar = () => {
                         src={Logo}
                     />
                 </div>
-                <h1 className="text-2xl font-bold text-white">
+                <h1 className=" text-xl md:text-2xl font-bold text-white">
                     FusionwaveAI
                 </h1>
             </a>
