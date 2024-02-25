@@ -6,7 +6,7 @@ import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./UI/button";
-
+import Logo from "./media/logo.png"
 const font = Montserrat({
     weight: "600",
     subsets: ["latin"]
@@ -22,7 +22,7 @@ export const Navbar = () => {
                     <Image
                     fill
                     alt="logo"
-                    src="/logo.png"
+                    src={Logo}
                     />
                 </div>
                 <h1 className={("text-2xl font-bold text-white")}>
