@@ -44,35 +44,48 @@ export const Logos = () => {
             },
         ],
     };
-    
+
     const companies = [
         {
             name: "dmail",
             imagePath: dmail,
+            url: "/"
         },
         {
             name: "fomoin",
             imagePath: fomoin,
+            url: "/"
+
         },
         {
             name: "gptverse",
             imagePath: gptverse,
+            url: "/"
+
         },
         {
             name: "helaLabs",
             imagePath: helaLabs,
+            url: "/"
+
         },
         {
             name: "Meta2150",
             imagePath: Meta2150,
+            url: "/"
+
         },
         {
             name: "skale",
             imagePath: skale,
+            url: "/"
+
         },
         {
             name: "w3goo",
             imagePath: w3goo,
+            url: "/"
+
         },
         // Add similar objects for other companies
     ];
@@ -84,20 +97,20 @@ export const Logos = () => {
                 </h2>
                 <div className="text-gray-500 dark:text-gray-400 mx-8 ">
                     <Slider {...sliderSettings}>
-                    {companies.map((company) => (
-                        <a key={company.name} href="#" className="flex justify-center items-center ml-16">
+                        {companies.map((company) => (
+                            <a key={company.name} href={company.url} className="flex justify-around mx-8 my-auto">
 
-                            <Image
-                                src={company.imagePath}
-                                alt={company.name}
-                                width={100} // Adjust the width as needed
-                                height={50} // Adjust the height as needed
-                                className="hover:text-gray-900 dark:hover:text-white justify-between items-center"
-                            />
-                        </a>
+                                <Image
+                                    src={company.imagePath}
+                                    alt={company.name}
+                                    width={100} // Adjust the width as needed
+                                    height={50} // Adjust the height as needed
+                                    className="hover:text-gray-900 dark:hover:text-white"
+                                />
+                            </a>
 
-))}
-</Slider>
+                        ))}
+                    </Slider>
                 </div>
             </div>
         </section>
