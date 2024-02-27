@@ -44,7 +44,7 @@ export const Logos = () => {
             },
         ],
     };
-    
+
     const companies = [
         {
             name: "dmail",
@@ -74,30 +74,29 @@ export const Logos = () => {
             name: "w3goo",
             imagePath: w3goo,
         },
-        // Add similar objects for other companies
     ];
     return (
         <section className="bg-white dark:bg-gray-900">
-            <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+            <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 ">
                 <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
                     Whom we are Working with
                 </h2>
-                <div className="text-gray-500 dark:text-gray-400 mx-8 ">
+                <div className="text-gray-500 dark:text-gray-400 mx-8 justify-center items-center  ">
                     <Slider {...sliderSettings}>
-                    {companies.map((company) => (
-                        <a key={company.name} href="#" className="flex justify-center items-center ml-16">
+                        {companies.map((company) => (
+                            <a key={company.name} href="#" className="flex justify-center items-center ml-16">
+                                <Image
+                                    src={company.imagePath}
+                                    alt={company.name}
+                                    width={100} 
+                                    height={50} 
+                                    className="hover:text-gray-900 dark:hover:text-white  "
+                                />
+                            </a>
 
-                            <Image
-                                src={company.imagePath}
-                                alt={company.name}
-                                width={100} // Adjust the width as needed
-                                height={50} // Adjust the height as needed
-                                className="hover:text-gray-900 dark:hover:text-white justify-between items-center"
-                            />
-                        </a>
 
-))}
-</Slider>
+                        ))}
+                    </Slider>
                 </div>
             </div>
         </section>
