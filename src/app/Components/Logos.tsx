@@ -104,7 +104,7 @@ export const Logos = () => {
                 <div className="text-gray-500 dark:text-gray-400 mx-8 ">
                     <Slider {...sliderSettings}>
                         {companies.map((company) => (
-                            <a key={company.name} href={company.url} className="flex justify-around mx-8 my-auto">
+                            <a key={company.name} href={company.url} className="flex justify-around ml-16 my-auto">
 
                                 <Image
                                     src={company.imagePath}
