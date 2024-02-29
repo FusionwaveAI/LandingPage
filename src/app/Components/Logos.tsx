@@ -5,13 +5,14 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import dmail from "./media/logos/dmail.jpg";
+import dmail from "./media/logos/dmail.png";
 import fomoin from "./media/logos/fomoin.png";
 import gptverse from "./media/logos/gptverse.png";
 import helaLabs from "./media/logos/hela labs.png";
 import Meta2150 from "./media/logos/Meta2150s.png";
 import skale from "./media/logos/skale.png";
 import w3goo from "./media/logos/w3goo.png";
+import Shardeum from "./media/logos/Shardeum.png"
 
 export const Logos = () => {
 
@@ -86,6 +87,11 @@ export const Logos = () => {
             imagePath: w3goo,
             url: "/"
 
+        },
+        {
+            name: "Shardeum",
+            imagePath: Shardeum,
+            url: "/"
         },
         // Add similar objects for other companies
     ];
