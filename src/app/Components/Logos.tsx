@@ -13,6 +13,9 @@ import Meta2150 from "./media/logos/Meta2150s.png";
 import skale from "./media/logos/skale.png";
 import w3goo from "./media/logos/w3goo.png";
 import Shardeum from "./media/logos/Shardeum.png"
+import puffVerse from './media/logos/puffVerse.png'
+import web3game from './media/logos/Web 3 game community.png'
+import wowEarn from './media/logos/wow earn.png'
 
 export const Logos = () => {
 
@@ -91,6 +94,21 @@ export const Logos = () => {
         {
             name: "Shardeum",
             imagePath: Shardeum,
+            url: "/"
+        },
+        {
+            name: "puffVerse",
+            imagePath: puffVerse,
+            url: "/"
+        },
+        {
+            name: "Web 3 game",
+            imagePath: web3game,
+            url: "/"
+        },
+        {
+            name: "wow earn",
+            imagePath: wowEarn,
             url: "/"
         },
         // Add similar objects for other companies
