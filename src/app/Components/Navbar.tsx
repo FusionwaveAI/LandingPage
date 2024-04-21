@@ -48,11 +48,11 @@ export const Navbar = () => {
                     </button>
                     {dropdownOpen && (
                         <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl">
-                            <a href="https://fusionfight.netlify.app/" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                                Fusion Fight
+                            <a href="https://fusionfight.netlify.app/" className="block px-4 py-2 text-gray-800 hover:bg-pi">
+                                FusionFight
                             </a>
                             <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                                FusionNFT
+                                FusionImage
                             </a>
                         </div>
                     )}
