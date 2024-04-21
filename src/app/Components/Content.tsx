@@ -1,4 +1,5 @@
 "use client";
+import {Timeline} from './Timeline'
 
 import { Card, CardContent, CardHeader, CardTitle } from "../Components/UI/card"
 const testimonials = [
@@ -31,9 +32,12 @@ const testimonials = [
 export const Content = () => {
     return (
         <div className="px-10 pb-20">
-            <h2 className="text-center text-4xl text-white font-extrabold mb-10">
+            <h2 className="text-center text-4xl text-white font-extrabold ">
                 Launching Soon!
             </h2>
+            <div className="flex mt-0 items-center justify-center min-h-screen ">
+      <Timeline />
+    </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                {testimonials.map((item) => (
                 <Card key={item.description} className="bg-[#192339] border-none text-white">

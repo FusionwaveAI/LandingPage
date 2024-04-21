@@ -34,12 +34,12 @@ export const Navbar = () => {
             <div className="flex items-center ">
                 <div className="hidden md:flex">
                     <a href="https://fusionfight.netlify.app/">
-                        <Button variant="outline" className="rounded-full mr-3">
-                            Fusion Fight
+                        <Button variant="outline" className="rounded-full mr-3 hover:bg-gradient-to-r from-purple-400 to-pink-600">
+                            FusionFight
                         </Button>
                     </a>
-                    <Button variant="outline" className="rounded-full">
-                        FusionNFT
+                    <Button variant="outline" className="rounded-full ">
+                        FusionImage
                     </Button>
                 </div>
                 <div className="md:hidden">

@@ -16,13 +16,13 @@ export const Footer = () => {
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
 
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Follow us</h2>
+                            <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Know more</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="https://github.com//FusionwaveAI" className="hover:underline ">Github</a>
+                                    <a href="https://github.com//FusionwaveAI" className="hover:underline ">Pitchdeck</a>
                                 </li>
                                 <li>
-                                    <a href="https://t.me/fusionwaveai" className="hover:underline">Telegram</a>
+                                    <a href="https://t.me/fusionwaveai" className="hover:underline">Tokenomics</a>
                                 </li>
                             </ul>
                         </div>

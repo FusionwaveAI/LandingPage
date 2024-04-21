@@ -67,24 +67,14 @@ export const Logos = () => {
             url: "/"
 
         },
-        {
-            name: "helaLabs",
-            imagePath: helaLabs,
-            url: "/"
 
-        },
         {
             name: "Meta2150",
             imagePath: Meta2150,
             url: "/"
 
         },
-        {
-            name: "skale",
-            imagePath: skale,
-            url: "/"
-
-        },
+     
         {
             name: "w3goo",
             imagePath: w3goo,
@@ -111,12 +101,47 @@ export const Logos = () => {
             imagePath: wowEarn,
             url: "/"
         },
-        // Add similar objects for other companies
+      
+    ];
+    const partners= [
+  
+        {
+            name: "helaLabs",
+            imagePath: helaLabs,
+            url: "/"
+
+        },
+   
+        {
+            name: "skale",
+            imagePath: skale,
+            url: "/"
+
+        },
+  
+      
     ];
     return (
         <section className=" dark:bg-gray-900">
             <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-                <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center  dark:text-white md:text-4xl">
+            <h2 className="mb-8    lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center  dark:text-white md:text-4xl">
+                  Our Launch Partners
+             </h2>
+            <div className="text-gray-500 dark:text-gray-400  mx-auto flex justify-center items-center">
+    {partners.map((company) => (
+        <a key={company.name} href={company.url} className="mx-4">
+            <Image
+                src={company.imagePath}
+                alt={company.name}
+                width={100} // Adjust the width as needed
+                height={50} // Adjust the height as needed
+                className="hover:text-gray-900 dark:hover:text-white"
+            />
+        </a>
+    ))}
+</div>
+
+                <h2 className="mb-8 mt-16   lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center  dark:text-white md:text-4xl">
                     Whom we are Working with
                 </h2>
                 <div className="text-gray-500 dark:text-gray-400 mx-8 ">
@@ -135,6 +160,7 @@ export const Logos = () => {
 
                         ))}
                     </Slider>
+                    
                 </div>
             </div>
         </section>
