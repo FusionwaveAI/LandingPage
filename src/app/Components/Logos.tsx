@@ -106,15 +106,15 @@ export const Logos = () => {
     const partners= [
   
         {
-            name: "helaLabs",
-            imagePath: helaLabs,
+            name: "skale",
+            imagePath: skale,
             url: "/"
 
         },
    
         {
-            name: "skale",
-            imagePath: skale,
+            name: "helalabs",
+            imagePath: helaLabs,
             url: "/"
 
         },

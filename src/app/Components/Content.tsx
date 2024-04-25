@@ -32,12 +32,13 @@ const testimonials = [
 export const Content = () => {
     return (
         <div className="px-10 pb-20">
-            <h2 className="text-center text-4xl text-white font-extrabold ">
+<div className='mb-[10rem] mt-6'>
+<Timeline />
+</div>
+            <h2 className="text-center text-4xl text-white font-extrabold mb-24 ">
                 Launching Soon!
             </h2>
-            <div className="flex mt-0 items-center justify-center min-h-screen ">
-      <Timeline />
-    </div>
+           
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                {testimonials.map((item) => (
                 <Card key={item.description} className="bg-[#192339] border-none text-white">

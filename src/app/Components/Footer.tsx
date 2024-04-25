@@ -4,7 +4,7 @@ import logo from '../Components/media/logo.png'
 
 export const Footer = () => {
     return (
-        <footer className=" dark:bg-gray-900 border-t  border-gray-200 dark:border-gray-700">
+        <footer className=" dark:bg-gray-900 border-t  border-gray-200 dark:border-gray-700  mt-11">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
