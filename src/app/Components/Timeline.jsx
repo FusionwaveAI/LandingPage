@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 
 export const Timeline = () => {
-  // Define timeline items as an array of objects
+
   const timelineItems = [
     {
       title: "Flowbite Library v1.0.0",
@@ -41,23 +41,21 @@ export const Timeline = () => {
       releaseDate: "Released on January 5, 2022",
       description: "Get started with dozens of web components and interactive elements."
     },
-    // Add more items as needed
+   
   ];
 
-  // State to manage showing more items
   const [showMore, setShowMore] = useState(false);
 
-  // Function to toggle show more items
+  
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
 
-  // Limit number of items to show based on showMore state
   const visibleItems = showMore ? timelineItems : timelineItems.slice(0, 5);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-      {/* Map over visibleItems and render each item */}
+     
       {visibleItems.map((item, index) => (
         <div key={index} className="relative mb-6">
           <div className="flex items-center">
@@ -75,7 +73,7 @@ export const Timeline = () => {
           </div>
         </div>
       ))}
-      {/* Show More button */}
+  
       {!showMore && timelineItems.length > 5 && (
         <div className="col-span-full flex justify-center">
           <button className="text-blue-500 dark:text-blue-400 hover:underline" onClick={toggleShowMore}>Show More</button>
